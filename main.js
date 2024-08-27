@@ -10,9 +10,23 @@ class Field {
     constructor(grid) {
         this.grid = grid;
     }
+    
+    print() {
+        console.log(this.grid.map(square => square.join('')).join(''))
+        }
+        //console.log(this.grid.join(''))
+    
 }
 
+const readline = require('readline').createInterface({
+    input: process.stdin,
+    output: process.stdout
+})
 
+
+readline.question('Where do you want to move? Use numbers: ', userInput => {
+    console.log(`user input: ${userInput}`)
+})
 const classTest = new Field([
     ['*', '░', 'O'],
     ['░', 'O', '░'],
@@ -20,4 +34,10 @@ const classTest = new Field([
   ]);
 
 
-  console.log(classTest)
+
+
+
+
+  //console.log(classTest)
+  //classTest.print()
+
