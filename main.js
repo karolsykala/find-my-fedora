@@ -18,21 +18,26 @@ class Field {
     
 }
 
-const readline = require('readline').createInterface({
-    input: process.stdin,
-    output: process.stdout
-})
-
-
-readline.question('Where do you want to move? Use numbers: ', userInput => {
-    console.log(`user input: ${userInput}`)
-})
 const classTest = new Field([
     ['*', '░', 'O'],
     ['░', 'O', '░'],
     ['░', '^', '░'],
   ]);
 
+
+
+
+
+const readline = require('readline').createInterface({
+    input: process.stdin,
+    output: process.stdout
+})
+
+
+readline.question('Where do you want to move? Use WSAD: ', userInput => {
+    classTest.print()
+    console.log(`user input: ${userInput}`)
+})
 
 
 
