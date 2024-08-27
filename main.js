@@ -15,7 +15,17 @@ class Field {
         console.log(this.grid.map(square => square.join('')).join(''))
         }
         //console.log(this.grid.join(''))
-    
+    generateField(length, width) {
+        this.grid = Math.rando
+    }
+
+    checkOutOfBound() {
+
+    }
+
+    foundHat() {
+
+    }
 }
 
 const classTest = new Field([
