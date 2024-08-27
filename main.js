@@ -4,3 +4,20 @@ const hat = '^';
 const hole = 'O';
 const fieldCharacter = '░';
 const pathCharacter = '*';
+
+
+class Field {
+    constructor(grid) {
+        this.grid = grid;
+    }
+}
+
+
+const classTest = new Field([
+    ['*', '░', 'O'],
+    ['░', 'O', '░'],
+    ['░', '^', '░'],
+  ]);
+
+
+  console.log(classTest)
